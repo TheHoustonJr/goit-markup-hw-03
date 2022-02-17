@@ -88,7 +88,7 @@ body {
 .list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .header-list {
@@ -308,6 +308,18 @@ body {
 
 .team-list {
   display: flex;
+}
+
+.team-container {
+  padding: 30px 0;
+}
+
+img {
+  display: block;
+}
+
+div {
+  display: block;
 }
 
 /* Подвал */
