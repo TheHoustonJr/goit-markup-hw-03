@@ -271,7 +271,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-item {
@@ -315,10 +315,6 @@ body {
 }
 
 img {
-  display: block;
-}
-
-div {
   display: block;
 }
 
