@@ -11,16 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта-->
     <header class="header">
-      <nav>
+      <div class="container div-container">
+        <nav class="header-nav">
         <a class="header-logo-web" href="./index.html"
           >Web<span class="header-logo-studio">Studio</span></a
         >
-        <ul class="header-list">
+        <ul class="header-list list">
           <li class="header-item">
             <a class="header-link" href="./index.html">Студия</a>
           </li>
@@ -33,7 +35,7 @@
         </ul>
       </nav>
 
-      <ul class="header-nav">
+      <ul class="header-nav auth-nav">
         <li class="header-info">
           <a class="header-mail" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -42,13 +44,14 @@
         <li class="header-info">
           <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
-      </ul>
+      </ul></div>
     </header>
 
     <!--Портфолио-->
     <main>
       <section class="portfolio">
-        <h1 class="portfolio-main" hidden>Портфолио</h1>
+        <div class="container">
+          <h1 class="portfolio-main" hidden>Портфолио</h1>
         <ul class="portfolio-list">
           <li class="portfolio-list"><button class="portfolio-btn main-btn" type="button">Все</button></li>
           <li class="portfolio-list"><button class="portfolio-btn main-btn" type="button">Веб-сайты</button></li>
@@ -146,14 +149,16 @@
             <p class="portfolio-description">Приложение</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--Подвал-->
     <footer class="footer">
-      <a class="footer-logo-web" href="./index.html">Web<span class="footer-logo-studio">Studio</a>
+      <div class="container">
+        <a class="footer-logo-web" href="./index.html">Web<span class="footer-logo-studio">Studio</a>
       <address class="footer-adress">
-        <ul class="footer-link">
+        <ul class="footer-link list">
           <li class="footer-item">
             <a
               class="footer-map"
@@ -171,6 +176,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

@@ -9,6 +9,19 @@
   --light-clr: #ffffff;
   --button-clr: #f5f4fa;
   --secondary-light-clr: #ffffff99;
+  --background-secondary-clr: #f5f4fa;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .main-btn {
@@ -41,6 +54,24 @@ body {
 }
 
 /* Шапка сайта*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.div-container {
+  display: flex;
+  height: 80px;
+}
+
+.header-logo-web {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .header-logo-web,
 .header-logo-studio {
   font-family: var(--secondary-font);
@@ -52,6 +83,22 @@ body {
 
 .header-link {
   color: var(--main-clr);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+.header-list .header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link.current {
@@ -91,9 +138,26 @@ body {
   letter-spacing: 0.02em;
 }
 
+.header-nav {
+  display: flex;
+}
+
+.auth-nav {
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-nav .header-info + .header-info {
+  margin-left: 50px;
+}
+
 /* Баннер */
 .hero {
   background-color: var(--background-clr);
+
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-main {
@@ -121,6 +185,15 @@ body {
   background: var(--button-clr);
 }
 
+.main-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  padding: 10px 32px;
+}
 /* Абзацы */
 .paragraph-main {
   font-family: var(--main-font);
@@ -128,6 +201,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+.paragraph-item {
+  width: 270px;
 }
 
 .paragraph-description {
@@ -140,6 +217,28 @@ body {
   color: var(--secondary-clr);
 }
 
+.paragraph-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-paragraph:not(:last-child) {
+  margin-right: 30px;
+}
+
+.paragraph-main {
+  padding-bottom: 10px;
+}
+
+.paragraph-list {
+  display: flex;
+}
+
+.paragraph-list .paragraph-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Галерея работ */
 .hallery-main {
   font-family: var(--main-font);
@@ -147,15 +246,45 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.hallery-list {
+  display: flex;
+}
+
+.hallery-list .hallery-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Команда */
+.team {
+  background-color: var(--background-secondary-clr);
+}
+
 .team-main {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.team-item {
+  width: 270px;
+  height: 368px;
+  background-color: var(--light-clr);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-name {
@@ -164,6 +293,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-description {
@@ -172,13 +302,20 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
+  text-align: center;
   color: var(--secondary-clr);
+}
+
+.team-list {
+  display: flex;
 }
 
 /* Подвал */
 .footer {
   background-color: var(--background-clr);
+  height: 256px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-map:hover,
@@ -213,7 +350,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--light-clr);
 }
 
@@ -224,8 +360,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--secondary-light-clr);
+}
+
+.footer-item:first-child {
+  margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Портфолио */
