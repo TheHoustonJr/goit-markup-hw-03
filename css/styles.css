@@ -244,6 +244,10 @@ body {
 }
 
 /* Галерея работ */
+.hallery {
+  padding-bottom: 94px;
+}
+
 .hallery-main {
   font-family: var(--main-font);
   font-weight: bold;
